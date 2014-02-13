@@ -20,6 +20,22 @@ scanf("%f",(b+i));
 }
 while(p<m||q<n)
 {
+if(p>=(m+n)/2)
+{
+if((m+n)%2==0)
+meadian=(a[p-1]+a[p])/2;
+else
+median=a[p];
+break;
+}
+else
+{
+if((m+n)%2==0)
+median=(a[q-1]+a[q])/2;
+else
+median=a[q];
+break;
+}
 if(p+q+1==(m+n)/2)
 {
 if((m+n)%2==0)
@@ -45,3 +61,5 @@ p++;
 printf("%f",median);
 return 0;
 }
+
+
