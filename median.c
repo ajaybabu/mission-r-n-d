@@ -28,7 +28,7 @@ else
 median=a[p];
 break;
 }
-else
+if(q>=(m+n)/2)
 {
 if((m+n)%2==0)
 median=(a[q-1]+a[q])/2;
